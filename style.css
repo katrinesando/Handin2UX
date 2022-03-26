@@ -5,15 +5,126 @@ html {
 	}
 body { 
 	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #ffff;
-	margin: 0; 
+	background-color: yellow;
+	background-image: url("icons/backgroundCoffee.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% auto;
+	margin: 0;
 	padding: 0;
 	}
-.normal-text{
-	font-size: 18px;
-}
-h1{
+/*.normal-text{*/
+/*	font-size: 18px;*/
+/*}*/
+h1 {
 	text-align: center;
+	color:blue;
+}
+.top{
+	text-align: center;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+	#primary {
+		width:67%;
+	}
+	#secondary {
+		width:30%; margin-left:3%;
+	}
+	body{
+		background-color: red;
+	}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (min-width: 768px) {
+	.mobile-nav{
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	#primary {
+		width:100%;
+		background-color: red;
+	}
+
+	#secondary {
+		width:100%;
+		margin:0;
+		border:none;
+
+	}
+	body{
+		background-color: black;
+		margin: auto;
+		background-size: 100% auto;
+
+	}
+	.top{
+		padding-top: 3%;
+		height: 70px;
+		background-color: grey;
+	}
+	logo{
+		width: 100%;
+	}
+	picture{
+		display: flex;
+		justify-content: center;
+	}
+	.middle{
+		justify-content: center;
+		padding: 10px 24px;
+
+	}
+	.middle button{
+		width: 60px;
+		height:100px ;
+		display: block;
+
+	}
+	.bar{
+		bottom: 0;
+		position: fixed;
+		overflow: hidden;
+		padding-bottom: 3%;
+		height: 70px;
+		width: 100%;
+		background-color: grey;
+
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+		float:left;
+	}
+
+	/*used for nav bar images https://dev.to/ziratsu/bottom-navigation-for-mobile-screens-23mk*/
+	.mobile-nav{
+		background: #F1F1F1;
+		position: fixed;
+		bottom: 0;
+		height: 65px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.bloc-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bloc-icon img {
+		width: 50px;
+	}
+	/*.bar a{*/
+	/*	image*/
+	/*	width: 65px;*/
+	/*	display: block;*/
+	/*	text-align: center;*/
+	/*	padding: 16px;*/
+	/*	vertical-align: middle;*/
+	/*	float:left;*/
+
+	/*}*/
 }
