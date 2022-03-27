@@ -14,9 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	}
-/*.normal-text{*/
-/*	font-size: 18px;*/
-/*}*/
+
 h1 {
 	text-align: center;
 	color:blue;
@@ -104,8 +102,8 @@ h1 {
 		justify-content: center;
 	}
 }
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
+ /*Media Queries: Tablet Landscape*/
+@media screen and (min-width: 768px) {
 	#primary {
 		width:100%;
 		background-color: red;
@@ -186,16 +184,16 @@ h1 {
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
 	.mobile-nav{
 		display: none;
 	}
-	.bar{
+}
+@media screen and (max-width: 425px) {
+	.sidebar{
 		display: none;
 	}
-}
-@media screen and (max-width: 768px) {
-	.sidebar{
+	.searchbar{
 		display: none;
 	}
 	#primary {
