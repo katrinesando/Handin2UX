@@ -24,6 +24,56 @@ h1 {
 .top{
 	text-align: center;
 }
+
+@media screen and (min-width: 1060px) {
+	#primary {
+		width:100%;
+		background-color: red;
+	}
+
+	#secondary {
+		width:100%;
+		margin:0;
+		border:none;
+
+	}
+	body{
+		background-color: black;
+		margin: auto;
+		background-size: 100% auto;
+		overflow: hidden;
+
+	}
+	.top{
+		float: left;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		padding-right: 92%;
+		padding-left: 1%;
+		background-color: grey;
+	}
+	h1 {
+		position: absolute;
+		padding-left: 45%;
+		padding-top: 1%;
+		color: black;
+	}
+	.middle {
+		padding-top: 82px;
+		padding-left: 46%;
+		padding-bottom: 1px;
+	}
+	.middle button {
+		height: 50px;
+		width: 100px;
+	}
+	.b1{
+		padding: 4px;
+	}
+	.b2{
+		justify-content: center;
+	}
+}
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
 	#primary {
