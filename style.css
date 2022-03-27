@@ -121,6 +121,9 @@ h1 {
 	}
 }
 @media screen and (max-width: 768px) {
+	.sidebar{
+		display: none;
+	}
 	#primary {
 		width:100%;
 		background-color: red;
