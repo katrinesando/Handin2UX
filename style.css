@@ -55,6 +55,10 @@ h1 {
 		border:none;
 
 	}
+	h1 {
+		text-align: center;
+		color:white;
+	}
 	body{
 		background-color: black;
 		margin: auto;
@@ -74,11 +78,18 @@ h1 {
 		justify-content: center;
 	}
 	.middle{
-		/*padding: 10px 24px;*/
+		position: relative;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	}
 	.middle button{
-		width: 60px;
-		height:100px ;
+		width: 150px;
+		height:60px ;
+		background-color:#AD5503;
 	}
 	.b1{
 		display: flex;
@@ -120,14 +131,4 @@ h1 {
 	.bloc-icon img {
 		width: 50px;
 	}
-	/*.bar a{*/
-	/*	image*/
-	/*	width: 65px;*/
-	/*	display: block;*/
-	/*	text-align: center;*/
-	/*	padding: 16px;*/
-	/*	vertical-align: middle;*/
-	/*	float:left;*/
-
-	/*}*/
 }
