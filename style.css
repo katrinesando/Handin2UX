@@ -99,7 +99,7 @@ body {
 	}
 }
  /*Media Queries: Tablet Landscape*/
-@media screen and (device-width: 768px) {
+@media screen and (max-width: 960px) {
 	#primary {
 		width:100%;
 		background-color: red;
@@ -112,7 +112,7 @@ body {
 
 	}
 	body{
-		background-color: darkgray;
+		background-color: black;
 		/*margin: auto;*/
 		background-size: 100% auto;
 		overflow: hidden;
@@ -177,13 +177,10 @@ body {
 	}
 }
 
-/* Media Queries: Tabled Portrait */
-/*@media screen and (min-width: 425px) {*/
-/*	.mobile-nav{*/
-/*		display: none;*/
-/*	}*/
-/*}*/
-@media screen and (max-width: 480px) {
+/*Media Queries: Tabled Portrait */
+/*@media screen and (min-width: 500px) {
+}*/
+@media screen and (max-width: 500px) {
 	.sidebar{
 		display: none;
 	}
@@ -253,8 +250,8 @@ body {
 		width: 100%;
 		background-color: grey;
 
-		display: inline-block;
-		overflow: hidden;
+		display: flex;
+		/*overflow: hidden;*/
 		vertical-align: middle;
 		float:left;
 	}
